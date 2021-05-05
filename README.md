@@ -12,7 +12,7 @@ compared to the non-tailored recommendations that Yelp currently provides. Much 
 recommendations on the current platform consist of businesses that pay Yelp to be promoted as
 well as top-performing businesses that are not catered towards the user’s preferences. For this
 reason, we believe our system is more efficient providing recommendations that encompass the
-whole range of businesses within the user’s givenarea as well as businesses that our system expects
+whole range of businesses within the user’s given area as well as businesses that our system expects
 the user to like based upon their past reviews.
 
   Our recommendation system is built using Item-Based Collaborative Filtering. There are
@@ -29,16 +29,16 @@ similar to one another. In this case, the businesses constitute what we define a
 will measure this similarity is by calculating the Cosine Similarity Score between each of the
 businesses through their normalized rating. That is, if there exists a correlation between how users
 rate two different businesses, these businesses will be assigned a higher similarity score. First
-however, we must normalize all the ratings of theusers. This is because some users tend to be more
+however, we must normalize all the ratings of the users. This is because some users tend to be more
 optimistic or pessimistic than others, so to achieve the most accurate similarity score we must
-subtract the mean score of a user from all of theirbusiness reviews.
+subtract the mean score of a user from all of their business reviews.
 
   Next we create a n x n matrix (where n is defined as the number of different businesses)
 calculating the similarity between each business. In order to speed up the runtime we have made a
 number of different adjustments in this step including storing columns into arrays, storing our values
 in a matrix rather than a data table, and importing code that calculates the cosine similarity score
 using the library numba, jit. This has significantly sped up our runtime compared to before, but even
-still this cell took close to an hour and half torun on my machine (if you would like to run the code
+still this cell took close to an hour and half to run on my machine (if you would like to run the code
 on your own machine but don’t want to wait that long, you can consider only creating
 recommendations for users with 100 or more reviews. More information on how to do this is within
 the code).
