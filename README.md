@@ -16,7 +16,7 @@ whole range of businesses within the user’s given area as well as businesses t
 the user to like based upon their past reviews.
 
   Our recommendation system is built using Item-Based Collaborative Filtering. There are
-multiple files within the github, but our main file “Item Based CF” contains the most up to date
+multiple files within the github, but our main file “Yelp_Rec_MAIN” contains the most up to date
 code for our program. For this reason, we will walk you through how the code in this file works.
 
   We begin by importing a couple of tools for future data manipulation as well as tools for
