@@ -18,6 +18,8 @@ the user to like based upon their past reviews.
   Our recommendation system is built using Item-Based Collaborative Filtering. There are
 multiple files within the github, but our main file “Yelp_Rec_MAIN” contains the most up to date
 code for our program. For this reason, we will walk you through how the code in this file works.
+(The other file, yelp_rec_research, includes random code that we used as we worked to figure out 
+a solution).
 
   We begin by importing a couple of tools for future data manipulation as well as tools for
 reading the json files into dataframes. Since we will be providing users the option to filter their
